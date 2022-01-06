@@ -8,12 +8,26 @@ exit :wq
 check 
      sudo su-
 
- On docker  server
+
+
+On docker  server
        sudo su-
        root@IP 123 # yum update -y
        root # hostname docker-host
        vi /etc/hostname
 and clean and writle docker-host
+exit :wq
+check 
+     sudo su-
+
+
+
+On jenkins  server
+       sudo su-
+       root@IP 123 # yum update -y
+       root # hostname jenkins-host
+       vi /etc/hostname
+and clean and writle jenkins-host
 exit :wq
 check 
      sudo su-
