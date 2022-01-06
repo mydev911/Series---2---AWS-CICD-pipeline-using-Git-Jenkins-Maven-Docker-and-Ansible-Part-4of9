@@ -1,0 +1,19 @@
+ On ansible server
+       sudo su-
+       root@IP 123 # yum update -y
+       root # hostname ansible-control-node
+       vi /etc/hostname
+and clean and writle ansible-contol-node
+exit :wq
+check 
+     sudo su-
+
+ On docker  server
+       sudo su-
+       root@IP 123 # yum update -y
+       root # hostname docker-host
+       vi /etc/hostname
+and clean and writle docker-host
+exit :wq
+check 
+     sudo su-
