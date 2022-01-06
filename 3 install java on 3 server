@@ -1,0 +1,15 @@
+ON docker ----
+           root@docker-host#  amazon-linux-extras install java-openjdk11 -y
+other versrion                yum install java.1.8.0-openjdk -y
+
+ON ansible ----
+           root@ansible-control-node-host#  amazon-linux-extras install java-openjdk11 -y
+                                             yum install java.1.8.0-openjdk -y
+ON jenkins ----
+           root@jenkins#  amazon-linux-extras install java-openjdk11 -y 
+                          yum install java.1.8.0-openjdk -y
+			  
+			
+There are two java version we want to select 1 version
+                          alternatives --config java
+selection number 1/2
