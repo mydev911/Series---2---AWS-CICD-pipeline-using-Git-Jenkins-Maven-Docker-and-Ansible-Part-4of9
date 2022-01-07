@@ -8,6 +8,7 @@ add password ------ passwd ansadmin
 new password #same password on ansible server
 retype new password
                      
+GRANT SUDO ACCESS TO USER - ansadmin
 
 root@docker-host docker]# visudo
 ##Allow root to run any commands anywhere
