@@ -1,0 +1,62 @@
+https://github.com/amit873/Kubernetes-Ansible-Docker-Project/blob/main/Jenkins/Jenkins_Installation.MD
+
+installation of maven on aws ec2
+root@jenkins #   yum update -y
+Open new folder------      
+                cd/opt
+                ls
+root@jenkins opt #   wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+                     ls
+apache-maven-3.6.3-bin.tar.gz
+
+Now we change maven file name
+                     mv apache-maven-3.6.3-bin.tar.gz
+                     
+Configure Home path----
+                     cd~
+                     vi .bash_profile  ## create file path maven 
+PATH=$PATH:$HOME/bin                     
+                     M2_HOME=/opt/maven/apache-maven-3.6.1
+                     M2=$M2_HOME/bin
+                     PATH=<Existing_PATH>:$M2_HOME:$M2
+ exit :wq
+ 
+ For Refreshing      
+                     sudo su -
+ Check path 
+                     echo $PATH 
+                     echo $M2
+  /opt/maven/bin     
+                     mvn --version
+  
+  JENKINS  - INSTALLATION ON JENKINS INSTANCE
+ 
+ installation of jenkins on AMAZON ami INSTANCE
+                      yum -y install wget
+                      sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+                      sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+                      yum install jenkins -y
+                      service jenkins start
+                      chkconfig jenkins on
+                      systemctl status jenkins
+                      
+   Give sudo permission to jenkins User
+                       
+                       vi /etc/sudoers
+                       
+   ##Allow root to run any commands anywhere
+     root  ALL=(ALL)     ALL
+                         jenkins ALL=(ALL) NOPASSWD:ALL
+    exit :wq
+    
+                         systemctl restart jenkins
+                         
+     Check jenkins ----  ec2-public-ip:8080
+                        
+   
+                      
+                      
+ 
+                     
+                
+                     
