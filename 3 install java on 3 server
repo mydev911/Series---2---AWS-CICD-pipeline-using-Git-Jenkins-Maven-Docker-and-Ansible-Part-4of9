@@ -13,3 +13,12 @@ ON jenkins ----
 There are two java version we want to select 1 version
                           alternatives --config java
 selection number 1/2
+
+Check java version-------
+                         java -version
+			 
+	
+Enable password authentication
+on jenkins 
+         root @jenkins #----- vi /etc/ssh/sshd_config
+
