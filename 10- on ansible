@@ -1,1 +1,14 @@
+on ansible--------
+
+root@ansible-control-node ansible ]# whoami
+root
+
+root@ansible-control-node ansible ]# sudo su -ansadmin
+ansadmin@ansible-control-node ~]$  whoami
+ansadmin
+
+ansadmin@ansible-control-node ~]$ cd /opt
+                                 ls
+aws containerd rh
+
 
