@@ -1,0 +1,39 @@
+On ansible ----------------
+
+install Python and Python-pip
+
+root@ansible-control-node~]#  yum install python
+                              yum install python-pip y
+                              
+Install Ansible using pip-----------
+                          pip install ansible
+                          ansible --version
+                       
+ Create a dircetory /etc/ansible and create hosts file and add docker IP using "ip addr" and localhost for Ansible
+                       
+                                      mkdir /etc/ansible
+                                      cd /etc/ansible
+ root@ansible-control-node ansible ]# ls
+                                      sudo vi hosts
+                                      ls
+                    hosts                                    
+  Clean and write--------localhost 
+  check ------------------------------cat hosts
+                   localhost
+  
+  
+Create a directory under /opt in Ansible server using user ansadmin ( sudo su - ansadmin)
+                          
+                                      cd/opt
+                                      sudo mkdir docker
+                                      sudo chown -R ansadmin:ansadim /opt//docker
+                                      
+ root@ansible-control-node ansible ]#  yum install docker -y    
+                                       docker --version
+  
+  
+                          
+  
+                          
+                          
+                              
