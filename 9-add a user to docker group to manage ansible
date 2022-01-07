@@ -1,0 +1,3 @@
+on ansible-----
+
+root@ansible-control-node ansible]# usermod -aG docker ansadmin
