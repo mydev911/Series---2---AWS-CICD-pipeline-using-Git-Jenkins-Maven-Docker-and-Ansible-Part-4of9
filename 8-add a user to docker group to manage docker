@@ -1,2 +1,14 @@
 on docker 
 root@docker-host ~]# usermod -aG docker ansadmin
+root@docker-host ~]# sudo mkdir docker
+                    ls -l
+
+
+##drwxr-xr-x 2 root root 
+##root@docker-host ~]# sudo su -
+##root@docker-host ~]# sudo chown -R ansadmin:ansadm /opt/docker    
+
+
+ root@docker-host opt]# ls -l  
+ oot@docker-host opt]# sudo chown -R ansadmin:ansadm /opt/docker 
+ root@docker-host opt]# ls -l 
