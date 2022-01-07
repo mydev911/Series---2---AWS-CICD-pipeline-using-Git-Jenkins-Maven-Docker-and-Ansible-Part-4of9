@@ -1,0 +1,10 @@
+ On docker host
+ root@docker-host ]# docker --version
+                     service docker start
+                     service docker status 
+                     
+add user ---------- useradd ansadmin
+add password ------ passwd ansadmin
+new password #same password on ansible server
+retype new password
+                     
