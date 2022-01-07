@@ -35,3 +35,28 @@ add user ----------        useradd ansadmin
 add password ------        passwd ansadmin
 new password #same password on docker server
 retype new password 
+
+
+
+
+root@ansible-control-node ansible]# visudo
+
+##Allow root to run any commands anywhere
+  root  ALL=(ALL)           ALL
+                          ansadmin ALL=(ALL)   NOPASSWD: ALL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
