@@ -1,0 +1,2 @@
+on docker 
+root@docker-host ~]# usermod -aG docker ansadmin
