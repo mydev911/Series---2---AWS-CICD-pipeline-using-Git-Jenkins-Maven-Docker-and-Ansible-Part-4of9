@@ -1,0 +1,10 @@
+install plugin on jenkins
+  github
+  maven integration
+  maven invoker
+  publish over ssh
+  
+  manage jenkins > global tool configuration
+  
+  go to maven change the MAVEN_HOME path------ /opt/maven
+                                       then----- apply
