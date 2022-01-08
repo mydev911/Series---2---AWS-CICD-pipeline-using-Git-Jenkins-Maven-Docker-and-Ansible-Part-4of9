@@ -42,8 +42,37 @@ retype new password
 root@ansible-control-node ansible]# visudo
 
 ##Allow root to run any commands anywhere
-  root  ALL=(ALL)           ALL
+                          root  ALL=(ALL)           ALL
                           ansadmin ALL=(ALL)   NOPASSWD: ALL
+                          
+                          
+ root@ansible-control-node ansible]# sudo su - ansadmin
+ 
+  ansadmin@ansible-control-node ]# whoami
+  ansadmin
+  
+  ansadmin@ansible-control-node ]# ls -al
+  ansadmin@ansible-control-node ]# ssh-keygen
+  ansadmin@ansible-control-node .ssh ]# ssh-copy-id ansadmin@docker-private_ip 
+  
+  Now check
+  ansadmin@ansible-control-node .ssh ]# cd..
+  ansadmin@ansible-control-node ]# ssh ansadmin@docker_private_ip
+  exit
+  
+  
+  ansadmin@ansible-control-node ]# ssh-copy-id localhost
+  
+  Validation test
+                 ansible all -m ping
+  
+   
+  
+  
+  
+                          
+                          
+ 
 
 
 
